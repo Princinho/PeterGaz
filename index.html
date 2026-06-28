@@ -1774,6 +1774,36 @@
         display: none;
       }
 
+      /* Cacher le topbar sur mobile */
+      .topbar { display: none; }
+
+      /* Sur mobile, cacher le bouton WhatsApp nav (les FABs flottants suffisent) */
+      .btn-nav-wa {
+        display: none;
+      }
+
+      /* Réduire le bouton Commander */
+      .btn-nav-order {
+        font-size: 0.78rem;
+        padding: 8px 12px;
+      }
+
+      /* Topbar : empêcher le numéro de sauter sur 2 lignes */
+      .topbar {
+        flex-direction: column;
+        gap: 4px;
+        padding: 8px 4%;
+        text-align: center;
+      }
+
+      .topbar-left, .topbar-right {
+        justify-content: center;
+      }
+
+      .topbar-right a {
+        white-space: nowrap;
+      }
+
       .float-label {
         display: none;
       }
@@ -1806,7 +1836,7 @@
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
             <circle cx="12" cy="10" r="3" />
           </svg></span>
-        Agoè 13 BP 420, Lomé — Livraison en 24h dans toute la ville
+        Agoè 13 BP 420, Lomé — Livraison en 1h dans toute la ville
       </a>
     </div>
     <div class="topbar-right">
